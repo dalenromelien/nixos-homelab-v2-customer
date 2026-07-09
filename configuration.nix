@@ -7,6 +7,9 @@
 
   imports = [];
 
+  # Enable Nix flakes support for this system.
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
   networking.hostName = "home-server";
 
   # Enable SSH so you can log in after install
